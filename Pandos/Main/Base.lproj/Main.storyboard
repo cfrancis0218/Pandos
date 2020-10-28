@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pandos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="panda-vector-png-transparent-image-pngpix-panda-vector-png-500_559" translatesAutoresizingMaskIntoConstraints="NO" id="uqN-C3-orF">
+                                <rect key="frame" x="20" y="44" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="Hvd-GJ-feW"/>
+                                    <constraint firstAttribute="height" constant="130" id="N4h-tu-51R"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PANDOS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RtW-FR-7H8">
+                                <rect key="frame" x="158" y="44" width="236" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="9xG-y7-vY5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="41"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I8w-p4-oMO">
+                                <rect key="frame" x="102" y="807" width="210" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="dHj-JL-0m7"/>
+                                </constraints>
+                                <state key="normal" title="Choose Image">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Rd-bK-lLn"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5ae-0U-8zf">
+                                <rect key="frame" x="20" y="182" width="374" height="374"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="1vg-lE-9sw"/>
+                                    <constraint firstAttribute="height" constant="374" id="5jK-98-r4c"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RtW-FR-7H8" firstAttribute="leading" secondItem="uqN-C3-orF" secondAttribute="trailing" constant="8" id="0MC-FS-mRG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I8w-p4-oMO" secondAttribute="trailing" constant="102" id="1dj-le-uyg"/>
+                            <constraint firstItem="5ae-0U-8zf" firstAttribute="top" secondItem="uqN-C3-orF" secondAttribute="bottom" constant="8" id="6GR-ps-SNa"/>
+                            <constraint firstItem="uqN-C3-orF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="BJw-nx-3IV"/>
+                            <constraint firstItem="I8w-p4-oMO" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Dyw-5s-KZd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5ae-0U-8zf" secondAttribute="trailing" constant="20" id="LMR-gK-PqH"/>
+                            <constraint firstItem="I8w-p4-oMO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="102" id="WAs-ae-cj0"/>
+                            <constraint firstItem="5ae-0U-8zf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WQy-jk-Bsf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RtW-FR-7H8" secondAttribute="trailing" constant="20" id="fUm-Hj-ipB"/>
+                            <constraint firstItem="RtW-FR-7H8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="seA-Ld-HxS"/>
+                            <constraint firstItem="uqN-C3-orF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vOr-Oa-r6n"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="PandosImageView" destination="RtW-FR-7H8" id="V6x-kp-mtW"/>
+                        <outlet property="choose" destination="I8w-p4-oMO" id="a2H-Nq-fXs"/>
+                        <outlet property="imageView" destination="5ae-0U-8zf" id="k1B-f6-c3X"/>
+                        <outlet property="pandaImageView" destination="uqN-C3-orF" id="m3o-QL-clv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="panda-vector-png-transparent-image-pngpix-panda-vector-png-500_559" width="500" height="559"/>
+    </resources>
+</document>

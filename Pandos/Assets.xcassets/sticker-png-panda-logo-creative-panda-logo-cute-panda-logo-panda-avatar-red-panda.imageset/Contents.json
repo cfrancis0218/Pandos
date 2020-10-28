@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "sticker-png-panda-logo-creative-panda-logo-cute-panda-logo-panda-avatar-red-panda.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
